@@ -29,9 +29,10 @@ async function currentState(refresh: boolean): Promise<DashboardState> {
 }
 
 function createWindow(): BrowserWindow {
+  const snapH = Number(process.env.CALLSHEET_SNAP_H) || 0
   const w = new BrowserWindow({
     width: 980,
-    height: 700,
+    height: snapH || 700,
     minWidth: 760,
     minHeight: 520,
     show: false,
