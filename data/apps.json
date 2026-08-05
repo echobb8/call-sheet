@@ -1,0 +1,77 @@
+[
+  {
+    "id": "scriptbreak",
+    "name": "ScriptBreak",
+    "bundle": "ScriptBreak",
+    "repo": "scriptbreak",
+    "stage": "Breakdown",
+    "tagline": "Screenplay breakdown, bibles, shot lists, and prompt packs",
+    "recents": "scriptbreak"
+  },
+  {
+    "id": "cork-board",
+    "name": "Cork Board",
+    "bundle": "Cork Board",
+    "repo": "cork-board",
+    "stage": "Develop",
+    "tagline": "Index-card story boarding on an endless cork wall"
+  },
+  {
+    "id": "blockout",
+    "name": "Blockout",
+    "bundle": "Blockout",
+    "repo": "blockout",
+    "stage": "Previs",
+    "tagline": "3D previs — block scenes, cameras, and coverage"
+  },
+  {
+    "id": "motion-previs-studio",
+    "name": "Motion Previs Studio",
+    "bundle": "Motion Previs Studio v4",
+    "repo": "motion-previs-studio",
+    "stage": "Previs",
+    "tagline": "Animated previs with motion capture and camera moves"
+  },
+  {
+    "id": "storyboard-reference-studio",
+    "name": "Storyboard Reference Studio",
+    "bundle": "Storyboard Reference Studio",
+    "repo": "storyboard-reference-studio",
+    "stage": "Boards",
+    "tagline": "Storyboard frames from poses, props, and reference"
+  },
+  {
+    "id": "slate",
+    "name": "Slate",
+    "bundle": "Slate",
+    "repo": "slate",
+    "stage": "Prompt",
+    "tagline": "The prompt studio — plan, direct, compile for any generator",
+    "recents": "slate"
+  },
+  {
+    "id": "circle-take",
+    "name": "Circle Take",
+    "bundle": "Circle Take",
+    "repo": null,
+    "stage": "Dailies",
+    "tagline": "AI dailies — gate, rate, and circle your generated takes",
+    "recents": "circle-take"
+  },
+  {
+    "id": "stem-studio",
+    "name": "Stem Studio",
+    "bundle": "Stem Studio",
+    "repo": "stem-studio",
+    "stage": "Sound",
+    "tagline": "Split and rebuild music into stems for the mix"
+  },
+  {
+    "id": "sam-pdf-studio",
+    "name": "Sam PDF Studio",
+    "bundle": "Sam PDF Studio",
+    "repo": "sam-pdf-studio",
+    "stage": "Paperwork",
+    "tagline": "Read, annotate, and assemble production PDFs"
+  }
+]

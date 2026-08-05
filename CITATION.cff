@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you reference Call Sheet, please cite it as below."
+title: "Call Sheet"
+type: software
+authors:
+  - family-names: Wasserman
+    given-names: Sam
+repository-code: "https://github.com/wassermanproductions/call-sheet"
+license: Apache-2.0
