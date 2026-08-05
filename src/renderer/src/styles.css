@@ -164,3 +164,15 @@ body {
 ::-webkit-scrollbar { width: 9px; }
 ::-webkit-scrollbar-thumb { background: var(--ink-3); border-radius: 5px; }
 ::-webkit-scrollbar-track { background: transparent; }
+
+/* ---- support ---- */
+a.btn { display: block; text-align: center; text-decoration: none; }
+.btn.kofi { margin-top: 2px; }
+.credit {
+  margin-top: 12px;
+  font-size: 12px; line-height: 1.7;
+  color: var(--text-3);
+}
+.credit b { color: var(--text-2); }
+.credit a { color: var(--accent); text-decoration: none; }
+.credit a:hover { text-decoration: underline; }

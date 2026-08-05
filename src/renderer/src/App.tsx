@@ -100,6 +100,22 @@ export default function App(): React.JSX.Element {
           <button className="btn ghost wide" onClick={() => void window.callsheet.openSuiteHub()}>
             Suite on GitHub ↗
           </button>
+
+          <div className="col-head" style={{ marginTop: 22 }}>SUPPORT</div>
+          <a className="btn accent wide kofi" href="https://ko-fi.com/samwasserman" target="_blank" rel="noreferrer">
+            ♥ Support on Ko-fi
+          </a>
+          <div className="credit">
+            Created by <b>Sam Wasserman</b>
+            <br />
+            <a href="https://wassermanproductions.com" target="_blank" rel="noreferrer">
+              wassermanproductions.com
+            </a>
+            <br />
+            <a href="https://wasserman.ai" target="_blank" rel="noreferrer">
+              wasserman.ai
+            </a>
+          </div>
         </aside>
       </main>
     </div>

@@ -46,6 +46,10 @@ function createWindow(): BrowserWindow {
   } else {
     void w.loadFile(join(__dirname, '../renderer/index.html'))
   }
+  w.webContents.setWindowOpenHandler(({ url }) => {
+    void shell.openExternal(url)
+    return { action: 'deny' }
+  })
   w.on('close', (e) => {
     // Menu-bar app: closing the window hides it, Quit lives in the tray.
     if (!quitting) {
@@ -102,6 +106,9 @@ async function rebuildTrayMenu(): Promise<void> {
       click: (item) => app.setLoginItemSettings({ openAtLogin: item.checked })
     },
     { label: 'Suite on GitHub', click: () => void shell.openExternal(SUITE_HUB) },
+    { label: 'Support on Ko-fi ♥', click: () => void shell.openExternal('https://ko-fi.com/samwasserman') },
+    { label: 'wassermanproductions.com', click: () => void shell.openExternal('https://wassermanproductions.com') },
+    { label: 'wasserman.ai', click: () => void shell.openExternal('https://wasserman.ai') },
     { type: 'separator' },
     {
       label: 'Quit Call Sheet',

@@ -22,7 +22,7 @@
     "bundle": "Blockout",
     "repo": "blockout",
     "stage": "Previs",
-    "tagline": "3D previs — block scenes, cameras, and coverage"
+    "tagline": "3D previs \u2014 block scenes, cameras, and coverage"
   },
   {
     "id": "motion-previs-studio",
@@ -46,16 +46,16 @@
     "bundle": "Slate",
     "repo": "slate",
     "stage": "Prompt",
-    "tagline": "The prompt studio — plan, direct, compile for any generator",
+    "tagline": "The prompt studio \u2014 plan, direct, compile for any generator",
     "recents": "slate"
   },
   {
     "id": "circle-take",
     "name": "Circle Take",
     "bundle": "Circle Take",
-    "repo": null,
+    "repo": "circle-take",
     "stage": "Dailies",
-    "tagline": "AI dailies — gate, rate, and circle your generated takes",
+    "tagline": "AI dailies \u2014 gate, rate, and circle your generated takes",
     "recents": "circle-take"
   },
   {
@@ -69,7 +69,7 @@
   {
     "id": "sam-pdf-studio",
     "name": "Sam PDF Studio",
-    "bundle": "Sam PDF Studio",
+    "bundle": "SamPDFStudio",
     "repo": "sam-pdf-studio",
     "stage": "Paperwork",
     "tagline": "Read, annotate, and assemble production PDFs"
