@@ -98,6 +98,6 @@ describe('registry', () => {
       expect(ids.has(a.id)).toBe(false)
       ids.add(a.id)
     }
-    expect(ids.size).toBe(9)
+    expect(ids.size).toBe(10)
   })
 })

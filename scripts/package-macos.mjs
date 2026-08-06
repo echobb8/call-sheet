@@ -69,6 +69,10 @@ pb(['-c', `Set :CFBundleShortVersionString ${pkgVersion}`])
 renameSync(resolve(appPath, 'Contents/MacOS/Electron'), resolve(appPath, 'Contents/MacOS/Call Sheet'))
 
 console.log('→ ad-hoc signing')
+// Electron.app may inherit Finder metadata/resource forks from the npm cache.
+// codesign rejects those extended attributes, so clear them from the copied
+// bundle before applying the release signature.
+run('xattr', ['-cr', appPath])
 run('codesign', ['--force', '--deep', '--sign', '-', appPath])
 
 if (process.argv.includes('--install')) {

@@ -1,7 +1,7 @@
 {
   "name": "call-sheet",
   "productName": "Call Sheet",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Mission control for Wasserman's Filmmaker Suite \u2014 launch every app, see every project, know when updates land.",
   "main": "out/main/index.js",
   "author": "Sam Wasserman",

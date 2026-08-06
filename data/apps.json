@@ -41,6 +41,14 @@
     "tagline": "Storyboard frames from poses, props, and reference"
   },
   {
+    "id": "master-canvas",
+    "name": "Master Canvas",
+    "bundle": "Master Canvas",
+    "repo": "master-canvas",
+    "stage": "Canvas",
+    "tagline": "Pre-production canvas for AI video plans, prompts, assets, and handoffs"
+  },
+  {
     "id": "slate",
     "name": "Slate",
     "bundle": "Slate",

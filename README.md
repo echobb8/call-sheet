@@ -37,7 +37,7 @@ Or grab `CallSheet-macOS.zip` from [Releases](../../releases), unzip into Applic
 
 ## The suite
 
-Call Sheet is the front door to [Wasserman's Filmmaker Suite](https://github.com/wassermanproductions/wassermans-filmmaker-suite) — ScriptBreak, Cork Board, Blockout, Motion Previs Studio, Storyboard Reference Studio, Slate, Circle Take, Stem Studio, and Sam PDF Studio.
+Call Sheet is the front door to [Wasserman's Filmmaker Suite](https://github.com/wassermanproductions/wassermans-filmmaker-suite) — ScriptBreak, Cork Board, Blockout, Motion Previs Studio, Storyboard Reference Studio, Master Canvas, Slate, Circle Take, Stem Studio, and Sam PDF Studio.
 
 ## Development
 
