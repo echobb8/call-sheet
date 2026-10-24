@@ -8,7 +8,7 @@ import type { DashboardState, SuiteApp } from '../shared/types'
 import { buildStatuses, appPath } from './status'
 import { allRecents } from './recents'
 
-const SUITE_HUB = 'https://github.com/echobb8/wassermans-filmmaker-suite/tree/kids-3d'
+const SUITE_HUB = 'https://github.com/echobb8/wassermans-filmmaker-suite/tree/biblical-period'
 
 let tray: Tray | null = null
 let win: BrowserWindow | null = null
@@ -123,7 +123,7 @@ async function rebuildTrayMenu(): Promise<void> {
 }
 
 app.whenReady().then(async () => {
-  app.setName('Call Sheet Kids 3D')
+  app.setName('Call Sheet Biblical Cinema')
   registry = loadRegistry()
 
   if (!process.env.CALLSHEET_SNAP_OUT) {
@@ -179,13 +179,13 @@ ipcMain.handle('app:launch', async (_e, appId: string) => {
 
 ipcMain.handle('app:openRepo', async (_e, appId: string) => {
   const entry = registry.find((a) => a.id === appId)
-  if (entry?.repo) await shell.openExternal(`https://github.com/echobb8/${entry.repo}/tree/kids-3d`)
+  if (entry?.repo) await shell.openExternal(`https://github.com/echobb8/${entry.repo}/tree/biblical-period`)
 })
 
 ipcMain.handle('app:openLatest', async (_e, appId: string) => {
   const entry = registry.find((a) => a.id === appId)
   if (!entry?.repo) return
-  await shell.openExternal(`https://github.com/echobb8/${entry.repo}/tree/kids-3d`)
+  await shell.openExternal(`https://github.com/echobb8/${entry.repo}/tree/biblical-period`)
 })
 
 ipcMain.handle('path:reveal', async (_e, path: string) => {

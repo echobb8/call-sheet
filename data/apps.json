@@ -1,77 +1,77 @@
 [
   {
     "id": "scriptbreak",
-    "name": "ScriptBreak Kids 3D",
-    "bundle": "ScriptBreak Kids 3D",
+    "name": "ScriptBreak Biblical Cinema",
+    "bundle": "ScriptBreak Biblical Cinema",
     "repo": "scriptbreak",
     "stage": "Breakdown",
-    "tagline": "Age 5–8 story breakdown, character sheets and animation prompt packs",
+    "tagline": "Break down original period stories or Scripture adaptations with explicit source context",
     "recents": "scriptbreak"
   },
   {
     "id": "cork-board",
-    "name": "Cork Board Kids 3D",
-    "bundle": "Cork Board Kids 3D",
+    "name": "Cork Board Biblical Cinema",
+    "bundle": "Cork Board Biblical Cinema",
     "repo": "cork-board",
     "stage": "Develop",
-    "tagline": "Build a clear problem, learning beats and reassuring resolution"
+    "tagline": "Structure original historical fiction or passage-based story beats"
   },
   {
     "id": "blockout",
-    "name": "Blockout Kids 3D",
-    "bundle": "Blockout Kids 3D",
+    "name": "Blockout Biblical Cinema",
+    "bundle": "Blockout Biblical Cinema",
     "repo": "blockout",
     "stage": "Previs",
-    "tagline": "Stage readable action and smooth camera coverage for 3D animation"
+    "tagline": "Stage believable blocking and restrained realistic camera coverage"
   },
   {
     "id": "motion-previs-studio",
-    "name": "Motion Previs Studio Kids 3D",
-    "bundle": "Motion Previs Studio v4 Kids 3D",
+    "name": "Motion Previs Studio Biblical Cinema",
+    "bundle": "Motion Previs Studio v4 Biblical Cinema",
     "repo": "motion-previs-studio",
     "stage": "Previs",
-    "tagline": "Retarget reference timing while replacing live-action appearance"
+    "tagline": "Keep human motion and camera timing while replacing modern source appearances"
   },
   {
     "id": "storyboard-reference-studio",
-    "name": "Storyboard Reference Studio Kids 3D",
-    "bundle": "Storyboard Reference Studio Kids 3D",
+    "name": "Storyboard Reference Studio Biblical Cinema",
+    "bundle": "Storyboard Reference Studio Biblical Cinema",
     "repo": "storyboard-reference-studio",
     "stage": "Boards",
-    "tagline": "Build expressive 3D storyboard frames and animatics"
+    "tagline": "Build realistic boards from reviewed period references"
   },
   {
     "id": "master-canvas",
-    "name": "Master Canvas Kids 3D",
-    "bundle": "Master Canvas Kids 3D",
+    "name": "Master Canvas Biblical Cinema",
+    "bundle": "Master Canvas Biblical Cinema",
     "repo": "master-canvas",
     "stage": "Canvas",
-    "tagline": "Lock 3D character turnarounds, materials, palette and environment references"
+    "tagline": "Collect sourced period costumes, tools, architecture and geography"
   },
   {
     "id": "slate",
-    "name": "Slate Kids 3D",
-    "bundle": "Slate Kids 3D",
+    "name": "Slate Biblical Cinema",
+    "bundle": "Slate Biblical Cinema",
     "repo": "slate",
     "stage": "Prompt",
-    "tagline": "Compile continuity-locked children’s 3D animation prompts",
+    "tagline": "Compile prompts with era, region and original-story or Scripture context",
     "recents": "slate"
   },
   {
     "id": "circle-take",
-    "name": "Circle Take Kids 3D",
-    "bundle": "Circle Take Kids 3D",
+    "name": "Circle Take Biblical Cinema",
+    "bundle": "Circle Take Biblical Cinema",
     "repo": "circle-take",
     "stage": "Dailies",
-    "tagline": "Review animation continuity, emotional intensity and take quality",
+    "tagline": "Review continuity and artifacts; keep historical and source reviews explicit",
     "recents": "circle-take"
   },
   {
     "id": "stem-studio",
-    "name": "Stem Studio Kids 3D",
-    "bundle": "Stem Studio Kids 3D",
+    "name": "Stem Studio Biblical Cinema",
+    "bundle": "Stem Studio Biblical Cinema",
     "repo": "stem-studio",
     "stage": "Sound",
-    "tagline": "Separate dialogue, music and effects for a clear gentle mix"
+    "tagline": "Prepare intelligible dialogue and period-appropriate sound for the final mix"
   }
 ]

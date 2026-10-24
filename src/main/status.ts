@@ -125,8 +125,8 @@ async function fetchLatest(repo: string): Promise<{ tag: string | null; url: str
     if (res.status === 404) return { tag: null, url: null } // repo private or no releases
     if (!res.ok) return null // rate-limited or transient — treat as offline
     const releases = (await res.json()) as Array<{ tag_name?: string; html_url?: string }>
-    const body = releases.find((release) => release.tag_name?.startsWith('kids-3d-')) ?? {}
-    return { tag: body.tag_name?.replace(/^kids-3d-/, '') ?? null, url: body.html_url ?? null }
+    const body = releases.find((release) => release.tag_name?.startsWith('biblical-period-')) ?? {}
+    return { tag: body.tag_name?.replace(/^biblical-period-/, '') ?? null, url: body.html_url ?? null }
   } catch {
     return null
   }
