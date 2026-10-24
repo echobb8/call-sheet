@@ -18,9 +18,9 @@ export function defaultPaths(): AdapterPaths {
   const home = homedir()
   const appData = join(home, 'Library', 'Application Support')
   return {
-    slateProjectsDir: process.env.SLATE_DATA_DIR || join(home, 'Documents', 'Slate'),
-    circleTakeRecents: join(appData, 'circle-take', 'recents.json'),
-    scriptbreakProject: join(appData, 'com.wasserman.scriptbreak', 'project.scriptbreak')
+    slateProjectsDir: process.env.SLATE_DATA_DIR || join(home, 'Documents', 'Slate Kids 3D'),
+    circleTakeRecents: join(appData, 'circle-take-kids-3d', 'recents.json'),
+    scriptbreakProject: join(appData, 'com.wasserman.scriptbreak.kids3d', 'project.scriptbreak')
   }
 }
 

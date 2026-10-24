@@ -1,4 +1,4 @@
-// Package Call Sheet.app for macOS — no electron-builder, no downloads.
+// Package Call Sheet Kids 3D.app for macOS — no electron-builder, no downloads.
 // Copies the local Electron runtime, rebrands the bundle (name, id, icon),
 // drops the built app into Resources/app, and ad-hoc signs the result.
 // Usage: node scripts/package-macos.mjs [--install]
@@ -14,7 +14,7 @@ const run = (cmd, args) => execFileSync(cmd, args, { stdio: ['ignore', 'ignore',
 const electronApp = resolve(root, 'node_modules/electron/dist/Electron.app')
 const dist = resolve(root, 'dist')
 const pkgVersion = JSON.parse(readFileSync(resolve(root, 'package.json'), 'utf8')).version
-const appPath = resolve(dist, 'Call Sheet.app')
+const appPath = resolve(dist, 'Call Sheet Kids 3D.app')
 
 if (!existsSync(resolve(root, 'out/main/index.js'))) {
   console.error('No build found — run `npm run build` first.')
@@ -51,7 +51,7 @@ cpSync(resolve(root, 'build/icon.png'), resolve(payload, 'build/icon.png'), { re
 cpSync(resolve(root, 'data'), resolve(payload, 'data'), { recursive: true })
 writeFileSync(
   resolve(payload, 'package.json'),
-  JSON.stringify({ name: 'call-sheet', productName: 'Call Sheet', version: pkgVersion, main: 'out/main/index.js' }, null, 2)
+  JSON.stringify({ name: 'call-sheet-kids-3d', productName: 'Call Sheet Kids 3D', version: pkgVersion, main: 'out/main/index.js' }, null, 2)
 )
 
 console.log('→ rebranding bundle')
@@ -59,9 +59,9 @@ cpSync(resolve(dist, 'call-sheet.icns'), resolve(res, 'call-sheet.icns'))
 rmSync(resolve(res, 'electron.icns'), { force: true })
 const plist = resolve(appPath, 'Contents/Info.plist')
 const pb = (args) => run('/usr/libexec/PlistBuddy', [...args, plist])
-pb(['-c', 'Set :CFBundleName Call Sheet'])
-pb(['-c', 'Set :CFBundleDisplayName Call Sheet'])
-pb(['-c', 'Set :CFBundleIdentifier com.wassermanproductions.call-sheet'])
+pb(['-c', 'Set :CFBundleName Call Sheet Kids 3D'])
+pb(['-c', 'Set :CFBundleDisplayName Call Sheet Kids 3D'])
+pb(['-c', 'Set :CFBundleIdentifier com.wassermanproductions.call-sheet.kids3d'])
 pb(['-c', 'Set :CFBundleIconFile call-sheet.icns'])
 pb(['-c', 'Set :CFBundleExecutable Call Sheet'])
 pb(['-c', 'Add :LSUIElement bool true'])
@@ -76,9 +76,9 @@ run('xattr', ['-cr', appPath])
 run('codesign', ['--force', '--deep', '--sign', '-', appPath])
 
 if (process.argv.includes('--install')) {
-  console.log('→ installing to /Applications/Call Sheet.app')
-  rmSync('/Applications/Call Sheet.app', { recursive: true, force: true })
-  run('ditto', [appPath, '/Applications/Call Sheet.app'])
+  console.log('→ installing to /Applications/Call Sheet Kids 3D.app')
+  rmSync('/Applications/Call Sheet Kids 3D.app', { recursive: true, force: true })
+  run('ditto', [appPath, '/Applications/Call Sheet Kids 3D.app'])
 }
 
 console.log('✓ packaged', appPath)

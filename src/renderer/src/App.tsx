@@ -1,3 +1,4 @@
+import { EDITION_LABEL } from '../../shared/production'
 import React, { useEffect, useMemo, useState } from 'react'
 import type { AppStatus, DashboardState, RecentProject } from '../../shared/types'
 
@@ -49,7 +50,7 @@ export default function App(): React.JSX.Element {
           <span className="mast-mark">◈</span>
           <div>
             <h1>call sheet</h1>
-            <div className="mast-sub">WASSERMAN&rsquo;S FILMMAKER SUITE · {fmtDay(new Date())}</div>
+            <div className="mast-sub">{EDITION_LABEL} · {fmtDay(new Date())}</div>
           </div>
         </div>
         <div className="mast-right">
@@ -171,7 +172,7 @@ function AppCard({ app }: { app: AppStatus }): React.JSX.Element {
         )}
         {!app.installed && app.repo && (
           <button className="btn accent" onClick={() => void window.callsheet.openLatest(app.id)}>
-            Download
+            Build source
           </button>
         )}
         {app.repo && (

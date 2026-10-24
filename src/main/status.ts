@@ -117,15 +117,16 @@ async function fetchLatest(repo: string): Promise<{ tag: string | null; url: str
   try {
     const ctrl = new AbortController()
     const t = setTimeout(() => ctrl.abort(), 8000)
-    const res = await fetch(`https://api.github.com/repos/wassermanproductions/${repo}/releases/latest`, {
+    const res = await fetch(`https://api.github.com/repos/echobb8/${repo}/releases?per_page=100`, {
       headers: { Accept: 'application/vnd.github+json', 'User-Agent': 'call-sheet' },
       signal: ctrl.signal
     })
     clearTimeout(t)
     if (res.status === 404) return { tag: null, url: null } // repo private or no releases
     if (!res.ok) return null // rate-limited or transient — treat as offline
-    const body = (await res.json()) as { tag_name?: string; html_url?: string }
-    return { tag: body.tag_name ?? null, url: body.html_url ?? null }
+    const releases = (await res.json()) as Array<{ tag_name?: string; html_url?: string }>
+    const body = releases.find((release) => release.tag_name?.startsWith('kids-3d-')) ?? {}
+    return { tag: body.tag_name?.replace(/^kids-3d-/, '') ?? null, url: body.html_url ?? null }
   } catch {
     return null
   }

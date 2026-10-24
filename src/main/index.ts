@@ -1,3 +1,4 @@
+import { EDITION_LABEL } from '../shared/production'
 // Call Sheet — menu-bar mission control for Wasserman's Filmmaker Suite.
 
 import { app, BrowserWindow, Tray, Menu, nativeImage, ipcMain, shell } from 'electron'
@@ -7,7 +8,7 @@ import type { DashboardState, SuiteApp } from '../shared/types'
 import { buildStatuses, appPath } from './status'
 import { allRecents } from './recents'
 
-const SUITE_HUB = 'https://github.com/wassermanproductions/wassermans-filmmaker-suite'
+const SUITE_HUB = 'https://github.com/echobb8/wassermans-filmmaker-suite/tree/kids-3d'
 
 let tray: Tray | null = null
 let win: BrowserWindow | null = null
@@ -36,7 +37,7 @@ function createWindow(): BrowserWindow {
     minWidth: 760,
     minHeight: 520,
     show: false,
-    title: 'Call Sheet',
+    title: `Call Sheet · ${EDITION_LABEL}`,
     backgroundColor: '#0d0f14',
     titleBarStyle: 'hiddenInset',
     webPreferences: { preload: join(__dirname, '../preload/index.js'), backgroundThrottling: false }
@@ -122,12 +123,12 @@ async function rebuildTrayMenu(): Promise<void> {
 }
 
 app.whenReady().then(async () => {
-  app.setName('Call Sheet')
+  app.setName('Call Sheet Kids 3D')
   registry = loadRegistry()
 
   if (!process.env.CALLSHEET_SNAP_OUT) {
     tray = new Tray(trayIcon())
-    tray.setToolTip('Call Sheet — Filmmaker Suite')
+    tray.setToolTip(`Call Sheet · ${EDITION_LABEL}`)
     void rebuildTrayMenu()
   }
 
@@ -178,13 +179,13 @@ ipcMain.handle('app:launch', async (_e, appId: string) => {
 
 ipcMain.handle('app:openRepo', async (_e, appId: string) => {
   const entry = registry.find((a) => a.id === appId)
-  if (entry?.repo) await shell.openExternal(`https://github.com/wassermanproductions/${entry.repo}`)
+  if (entry?.repo) await shell.openExternal(`https://github.com/echobb8/${entry.repo}/tree/kids-3d`)
 })
 
 ipcMain.handle('app:openLatest', async (_e, appId: string) => {
   const entry = registry.find((a) => a.id === appId)
   if (!entry?.repo) return
-  await shell.openExternal(`https://github.com/wassermanproductions/${entry.repo}/releases/latest`)
+  await shell.openExternal(`https://github.com/echobb8/${entry.repo}/tree/kids-3d`)
 })
 
 ipcMain.handle('path:reveal', async (_e, path: string) => {

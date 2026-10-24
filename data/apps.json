@@ -1,85 +1,77 @@
 [
   {
     "id": "scriptbreak",
-    "name": "ScriptBreak",
-    "bundle": "ScriptBreak",
+    "name": "ScriptBreak Kids 3D",
+    "bundle": "ScriptBreak Kids 3D",
     "repo": "scriptbreak",
     "stage": "Breakdown",
-    "tagline": "Screenplay breakdown, bibles, shot lists, and prompt packs",
+    "tagline": "Age 5–8 story breakdown, character sheets and animation prompt packs",
     "recents": "scriptbreak"
   },
   {
     "id": "cork-board",
-    "name": "Cork Board",
-    "bundle": "Cork Board",
+    "name": "Cork Board Kids 3D",
+    "bundle": "Cork Board Kids 3D",
     "repo": "cork-board",
     "stage": "Develop",
-    "tagline": "Index-card story boarding on an endless cork wall"
+    "tagline": "Build a clear problem, learning beats and reassuring resolution"
   },
   {
     "id": "blockout",
-    "name": "Blockout",
-    "bundle": "Blockout",
+    "name": "Blockout Kids 3D",
+    "bundle": "Blockout Kids 3D",
     "repo": "blockout",
     "stage": "Previs",
-    "tagline": "3D previs \u2014 block scenes, cameras, and coverage"
+    "tagline": "Stage readable action and smooth camera coverage for 3D animation"
   },
   {
     "id": "motion-previs-studio",
-    "name": "Motion Previs Studio",
-    "bundle": "Motion Previs Studio v4",
+    "name": "Motion Previs Studio Kids 3D",
+    "bundle": "Motion Previs Studio v4 Kids 3D",
     "repo": "motion-previs-studio",
     "stage": "Previs",
-    "tagline": "Animated previs with motion capture and camera moves"
+    "tagline": "Retarget reference timing while replacing live-action appearance"
   },
   {
     "id": "storyboard-reference-studio",
-    "name": "Storyboard Reference Studio",
-    "bundle": "Storyboard Reference Studio",
+    "name": "Storyboard Reference Studio Kids 3D",
+    "bundle": "Storyboard Reference Studio Kids 3D",
     "repo": "storyboard-reference-studio",
     "stage": "Boards",
-    "tagline": "Storyboard frames from poses, props, and reference"
+    "tagline": "Build expressive 3D storyboard frames and animatics"
   },
   {
     "id": "master-canvas",
-    "name": "Master Canvas",
-    "bundle": "Master Canvas",
+    "name": "Master Canvas Kids 3D",
+    "bundle": "Master Canvas Kids 3D",
     "repo": "master-canvas",
     "stage": "Canvas",
-    "tagline": "Pre-production canvas for AI video plans, prompts, assets, and handoffs"
+    "tagline": "Lock 3D character turnarounds, materials, palette and environment references"
   },
   {
     "id": "slate",
-    "name": "Slate",
-    "bundle": "Slate",
+    "name": "Slate Kids 3D",
+    "bundle": "Slate Kids 3D",
     "repo": "slate",
     "stage": "Prompt",
-    "tagline": "The prompt studio \u2014 plan, direct, compile for any generator",
+    "tagline": "Compile continuity-locked children’s 3D animation prompts",
     "recents": "slate"
   },
   {
     "id": "circle-take",
-    "name": "Circle Take",
-    "bundle": "Circle Take",
+    "name": "Circle Take Kids 3D",
+    "bundle": "Circle Take Kids 3D",
     "repo": "circle-take",
     "stage": "Dailies",
-    "tagline": "AI dailies \u2014 gate, rate, and circle your generated takes",
+    "tagline": "Review animation continuity, emotional intensity and take quality",
     "recents": "circle-take"
   },
   {
     "id": "stem-studio",
-    "name": "Stem Studio",
-    "bundle": "Stem Studio",
+    "name": "Stem Studio Kids 3D",
+    "bundle": "Stem Studio Kids 3D",
     "repo": "stem-studio",
     "stage": "Sound",
-    "tagline": "Split and rebuild music into stems for the mix"
-  },
-  {
-    "id": "sam-pdf-studio",
-    "name": "Sam PDF Studio",
-    "bundle": "SamPDFStudio",
-    "repo": "sam-pdf-studio",
-    "stage": "Paperwork",
-    "tagline": "Read, annotate, and assemble production PDFs"
+    "tagline": "Separate dialogue, music and effects for a clear gentle mix"
   }
 ]
